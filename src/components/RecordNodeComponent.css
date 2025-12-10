@@ -1,0 +1,49 @@
+/* Record Node Styles */
+
+.record-like-node {
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 12px 14px;
+  box-shadow: 0 2px 4px rgba(17, 24, 39, 0.06);
+  min-width: 200px;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, sans-serif;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.record-like-node:hover {
+  border-color: #3b82f6;
+  box-shadow: 0 4px 8px rgba(17, 24, 39, 0.1);
+}
+
+.record-like-node.selected {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.1), 0 4px 12px rgba(59, 130, 246, 0.12);
+  background: #f0f8ff;
+}
+
+.record-like-node .node-content {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.record-like-node .node-key {
+  font-size: 10px;
+  font-weight: 700;
+  color: #6b7280;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  opacity: 0.75;
+}
+
+.record-like-node .node-title {
+  font-size: 13px;
+  font-weight: 700;
+  color: #111827;
+  line-height: 1.4;
+  word-break: break-word;
+}

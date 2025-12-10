@@ -1,0 +1,61 @@
+/* Document Version Node Styles */
+
+.doc-version-node {
+  background: linear-gradient(135deg, #f0f4ff 0%, #e8ecff 100%);
+  border: 1px solid #c7d2fe;
+  border-radius: 8px;
+  padding: 12px 14px;
+  box-shadow: 0 2px 4px rgba(17, 24, 39, 0.06);
+  min-width: 200px;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, sans-serif;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.doc-version-node:hover {
+  border-color: #818cf8;
+  box-shadow: 0 4px 8px rgba(129, 140, 248, 0.12);
+}
+
+.doc-version-node.selected {
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 2px rgba(79, 70, 229, 0.1), 0 4px 12px rgba(79, 70, 229, 0.12);
+  background: linear-gradient(135deg, #e0e7ff 0%, #dbeafe 100%);
+}
+
+.doc-version-node .node-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.doc-version-node .node-title {
+  font-size: 13px;
+  font-weight: 700;
+  color: #111827;
+  line-height: 1.4;
+  text-align: center;
+  word-break: break-word;
+}
+
+.doc-version-node .version-label {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 10px;
+  border-radius: 6px;
+  border: 1px solid #818cf8;
+  background: #eef2ff;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+  font-size: 11px;
+  font-weight: 700;
+  color: #4f46e5;
+  user-select: none;
+}
