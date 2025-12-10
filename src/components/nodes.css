@@ -1,0 +1,193 @@
+/* Node Styling */
+
+.record-node,
+.document-node,
+.version-node {
+  padding: 12px;
+  border-radius: 8px;
+  border: 2px solid #e5e7eb;
+  background: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  min-width: 200px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, sans-serif;
+}
+
+.record-node:hover,
+.document-node:hover,
+.version-node:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border-color: #3b82f6;
+  transform: translateY(-2px);
+}
+
+.record-node.selected,
+.document-node.selected,
+.version-node.selected {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+  background: #f0f9ff;
+}
+
+.record-node.connecting,
+.document-node.connecting,
+.version-node.connecting {
+  opacity: 0.6;
+}
+
+/* Record Node Specific */
+.record-node {
+  background: linear-gradient(135deg, #f9fafb 0%, #f3f4f6 100%);
+  border-left: 4px solid #3b82f6;
+}
+
+.record-node.selected {
+  background: linear-gradient(135deg, #eff6ff 0%, #f0f9ff 100%);
+}
+
+/* Document Node Specific */
+.document-node {
+  background: linear-gradient(135deg, #faf9f7 0%, #f5f3f0 100%);
+  border-left: 4px solid #f59e0b;
+  min-height: 120px;
+}
+
+.document-node.selected {
+  background: linear-gradient(135deg, #fffbf0 0%, #fef3c7 100%);
+}
+
+/* Document Version Node */
+.version-node {
+  background: linear-gradient(135deg, #eef2ff 0%, #e0e7ff 100%);
+  border-left: 4px solid #6366f1;
+  min-width: 140px;
+}
+
+.version-node.selected {
+  background: linear-gradient(135deg, #eef2ff 0%, #c7d2fe 100%);
+}
+
+/* Node Content */
+.node-content {
+  position: relative;
+}
+
+.node-key {
+  font-size: 11px;
+  font-weight: 600;
+  color: #6b7280;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 4px;
+}
+
+.node-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 8px;
+  word-wrap: break-word;
+  word-break: break-word;
+  white-space: normal;
+}
+
+/* Badge */
+.node-badge {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: #3b82f6;
+  color: white;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: bold;
+  box-shadow: 0 2px 4px rgba(59, 130, 246, 0.3);
+}
+
+/* Indicator */
+.node-indicator {
+  font-size: 10px;
+  color: #059669;
+  font-weight: 600;
+  margin-top: 4px;
+}
+
+.node-indicator.expanded {
+  color: #3b82f6;
+}
+
+/* Versions Section */
+.versions-section {
+  margin-top: 8px;
+  padding-top: 8px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.versions-label {
+  font-size: 10px;
+  font-weight: 600;
+  color: #6b7280;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+.versions-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.version-pill {
+  display: inline-block;
+  background: #dbeafe;
+  color: #1e40af;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 10px;
+  font-weight: 500;
+  border: 1px solid #93c5fd;
+}
+
+.version-pill.more {
+  background: #fed7aa;
+  color: #92400e;
+  border-color: #fdba74;
+}
+
+/* React Flow Handles */
+.react-flow-handle {
+  width: 8px;
+  height: 8px;
+  background: #3b82f6;
+  border: 2px solid white;
+  box-shadow: 0 0 0 2px #3b82f6;
+}
+
+.react-flow-handle.connectingTo {
+  background: #10b981;
+  box-shadow: 0 0 0 2px #10b981;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .record-node,
+  .document-node {
+    min-width: 160px;
+    padding: 10px;
+  }
+
+  .node-title {
+    font-size: 12px;
+  }
+
+  .node-key {
+    font-size: 10px;
+  }
+}
